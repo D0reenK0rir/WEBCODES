@@ -4,60 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+    <style>
+        input[type=text]{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border-radius: 7px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+        }
+        input[type=message], textarea{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border-radius: 7px;
+          box-sizing: border-box; 
+          border: 1px solid #ccc;
+        }
+        input[type=submit] {
+          
+          background-color: saddlebrown;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color:#2980b9;
+        }
+       form{
+        background-color: ghostwhite;
+        border: 2px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        width: 50%;
+        margin: auto;
+       }
+        </style>
 </head>
-<style>
-    input[type=text]{
-        width:100%;
-        padding:12px 20px;
-        margin:8px 0;
-        box-sizing:border-box;
-    }
-    .button{
-        background-color: rgb(97, 50, 3);
-        border:none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration:antiquewhite;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
-    textarea{
-        width:100%;
-        height:150px;
-        padding:12px 20px;
-        border-radius: 4px;
-        box-sizing: border-box;
-        resize: none;
-
-    }
-    h2{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-    }
-    p{
-        text-align: center;
-    }
-    body {
-  background-image: url(background4.jpg);
-  
-}
-</style>
 <body>
-    
-    <h2>CONTACT US</h2>
- <p>Tel:+254728224340 | Info@Suncitytravels.com</p>
- <form>
-    <label for="name">Name*</label>
-    <input type="text" id="name" name="name">
-    <label for="email">Email*</label>
-    <input type="text" id="email" name="email">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Write something..."></textarea>
-    
- </form>
-  <button class="button">SEND</button>   
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="logo-image" height="7%" width="7%">
+        </div>
+        
+        <a href="contact.html">CONTACT US</a>
+              <div class="dropdown">
+                <button class="dropbtn">PACKAGES 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="domestic.html">Domestic</a>
+                  <a href="nonresidents.html">Non-residents</a>
+                  </div>
+                  </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT US 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="about.html">Our company</a>
+              <a href="gallery.html">Gallery</a>
+              </div>
+              </div>
+        <a href="index.html">HOME</a>
+      </div>
+    <section class="hero2">
+        <style>
+            .hero2{
+            background-image: url(contactushero.jpg);
+            height:500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        </style>
+        <div class="hero-content2">
+            <style>
+            .hero-content2{
+            text-align:center;
+            color: ghostwhite;
+            text-shadow: 2px 2px 4px #000000;
+            font-size: 18px;
+                }
+            </style>
+            <h1>CONTACT TOURICE TRAVELS</h1>
+            <p>We look forward to your inquiry and will be very happy to answer any question</p>
+            </div>
+    </section>
+    <section class="my-section">
+        <div><h2>Contact Us</h2>
+        <style>
+            h2{
+                text-align: center;
+            }
+        </style>
+        </div>
+        <div><p>+254 728-224-340 | info@touricetravels.com</p>
+        <style>
+            p{
+                text-align: center;
+            }
+        </style></div>
+        </div>
+        <form action="submit-form.php" method="POST">
+            <style>
+                label{
+                    float:left;
+                    width: 100px;
+                    text-align: right;
+                    margin-right: 10px;
+                }
+                
+               </style>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lasttname" placeholder="Your last name...">
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="e.g johndoe@gmail.com">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write something..."></textarea>
+            <button class="b-button">Submit</button>
+        
+        </form> 
+    </section>
+    <footer>
+        <p>Copy right &copy; 2020 Tourice Travels.All rights reserved.</p>
+                </footer>
+    <style>
+
+        footer{
+            background-color: ghostwhite;
+            padding:5px 0;
+            font-size: 14px;
+            color:black;
+        }
+    </style>
 </body>
 </html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

@@ -9,27 +9,46 @@
     <link rel="layout" href="layout.drawio"/>
     <script src="file.js" defer></script>
     <link rel="contact" href="contact.html"/>
+    <link rel="about" href="about.html"/>
+    <style>
+        .img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    </style>
     </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="logo.png" alt="logo-image" height="7%" width="7%">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="tourpackages.html">TOUR PACKAGES</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="reviews.html">REVIEWS</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <li><a href="login.html">LOG IN|SIGN UP</a></li>
-                </ul>
-            </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="logo-image" height="7%" width="7%">
         </div>
+        
+        <a href="contact.html">CONTACT US</a>
+              <div class="dropdown">
+                <button class="dropbtn">PACKAGES 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="domestic.html">Domestic</a>
+                  <a href="nonresidents.html">Non-residents</a>
+                  </div>
+                  </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT US 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="about.html">Our company</a>
+              <a href="gallery.html">Gallery</a>
+              </div>
+              </div>
+        <a href="index.html">HOME</a>
+      </div>
         <section class="hero">
+            
             <div class="slides">
                 <img src="heropic1.png" alt="Slide 1">
                 <img src="heropic2.jpg" alt="Slide 2">
@@ -39,47 +58,47 @@
                 <h1>YOUR #1 STOP FOR TRAVEL ENTHUSIASTS</h1>
                 <p>Appreciated for our knowledge,experience,professionalism,attention to detail,
                     sense of humor,communicaion skills and the best travel guides.</p>
-                    <button class="cta-button">Questions?click here</button>
+                    <button class="cta-button"><a href="contact.html">Questions?click here</a></button>
             </div>
         </section>
-        <section>
+        <section class="my-section">
          <div class="image-text-row">
                         <div class="image-text-container">
                             <img src="leopard.jpg" alt="cheetah">
                             <h2>SAFARIS</h2>
                             <p>We offer a range of safari itineraries staying some of the best lodges and tented camps in the region as well as an array of optional activities to enhance your safari experience.</p>
-                            <button class="b-button">BOOK NOW</button>
+                            
                         </div>
                         <div class="image-text-container">
                             <img src="Mount_Kenya.jpg" alt="mountain">
                             <h2>MOUNTAIN TREKS</h2>
                             <p>Our team of Mountain Guides, Chefs and Porters are some of the most experienced on the mountain and look forward of taking you to the “Roof of Africa”.</p>
-                            <button class="b-button">BOOK NOW</button>
+                           
                         </div>
                         <div class="image-text-container">
                             <img src="beach.jpg" alt="beach">
                             <h2>BEACH BREAKS</h2>
                             <p>Your beach holidays can be as adventurous or as relaxed as you like. To experience even more of what the various beaches have to offer, book one of our many day tours.</p>
-                            <button class="b-button">BOOK NOW</button>
+                           
                         </div>
                         <div class="image-text-container">
                             <img src="h-air balloon.jpeg" alt="balloons">
                             <h2>INDIVIDUAL TOURS</h2>
                             <p>Ask us for a tailor-made safari created just for you. We pride ourselves on our commit to customer service and making your travel dreams come true.</p>
-                            <button class="b-button">BOOK NOW</button>
+                            
                         </div>
                     </section>
-                        <section>
+                        <section class="my-section2">
                      <div class="logo-container">
                             <img src="logo.png" alt="logo-image" height="7%" width="7%">   
                             <text><h2>ABOUT US</h2></text><br>
                             <p>Founded in 2020, Tourice Travels is locally owned and operated by Doreen Korir and they are experts in the safari industry, specialising in Wildlife Safaris, Mountain Treks and Beach Breaks throughout Kenya. We are a KWS Licensed Tour Operator and a proud member of the Kenyan Association of Tour Operators (KATO), the Kenya Tourist Board (KTB) and the Interpretive Guides Society (IGS). We are well respected amongst peers and clients alike and are proud of our reputation within the travel industry.
 
                             </p>
-                            <button class="b-button">Read More</button>
+                            <button class="b-button"><a href="about.html">Read More</a></button>
                     </div>
                     </section>
-                    <section>
+                    <section class="my-section">
                     <p>There are many reasons why a safari is best with us. Here are some of them.</p>
                     <style>
                         p{
@@ -89,9 +108,9 @@
                     <div class="container">
                         <div class="text-container">
                             <h2>RESPONSIBLE TOURISM</h2>
-                        <p>Responsible tourism practices are important to Tourice Travels. Our values are ingrained in the culture of our business, from the way we run our office to the structure of our trips…
+                        <p>Responsible tourism practices are important to Tourice Travels. Our values are ingrained in the culture of our business, from the way we run our office to the structure of our trips.
                         </p>
-                        <button class="b-button">Learn More</button>
+                        
                         </div>
                         <div class="text-container">
                             <h2>EXPERT GUIDES</h2>
@@ -106,10 +125,10 @@
                         
                     </div>
                 </section>
-                    <section>
-            <div><h2>POPULAR DESTINATIONS</h2>
+                    <section class="my-section3">
+            <div><h1>POPULAR DESTINATIONS</h1>
             <style>
-                h2{
+                h1{
                     text-align: center;
                 }
             </style>
@@ -119,39 +138,35 @@
                 p{
                     text-align: center;
                 }
-            </style>
+                </style>
             </div>
             <div class="image-text-row">
                 <div class="image-text-container">
                      <img src="tsavoLion.jpg" alt="tsavo">
                      <h3>TSAVO NATIONAL PARK</h3>
-                    <p>A 3 day safari – enjoy game drives and a true wildlife adventure</p>
-                    <p>From $129.30</p>
-                    <button class="b-button">Check Details</button>
+         <p>A 3 day safari – enjoy game drives and a true wildlife adventure</p>
+                    
                 </div>
                 <div class="image-text-container">
                     <img src="L.nakurunat.park.jpg" alt="lake">
                     <h3>LAKE NAKURU NATIONAL PARK</h3>
                     <p>3 days to Lake Nakuru,spa resorts,breathtaking views</p>
-                    <p>From $110.33</p>
-                    <button class="b-button">Check Details</button>
+                    
                 </div>
                 <div class="image-text-container">
                     <img src="maasaimara.jpg" alt="maasaimara">
                     <h3>MAASAI MARA</h3>
                     <p>A 3 day safari to the world famous Masai Mara</p>
-                    <p>From $91.50</p>
-                    <button class="b-button">Check Details</button>
+                    
                 </div>
                 <div class="image-text-container">
                     <img src="diani.jpg" alt="diani">
                     <h3>MOMBASA</h3>
                     <p>Your Mombasa holiday can be as adventurous or as relaxed as you like</p>
-                    <p>From $80.95</p>
-                    <button class="b-button">Check Details</button>
+                    
                 </div>
         </section>
-        <section>
+        <section class="my-section">
             <div><h2>GREETINGS FROM KENYA</h2>
             <style>
              h2{
@@ -167,51 +182,18 @@
         Greetings from Kenya!</p>
         </div>
     </section>
-<section>
+<section class="my-section4">
     <div class="container3">
          <h2>THE MASAI MARA AND MARA CONSERVANCIES</h2><br>
             <p>Masai Mara is one of Africa’s little known gems and should be on the itinerary of all lovers of wilderness and solitude. Famous for hosting the great migration of 1.5 million wildebeest and its large lion population, the landscape is incredibly diverse with the rest of the big 5,elephant,buffalo,rhino and leopard, are also a common sight.
                 Hot-air-balloon over the Masai Mara and watch wildlife glide beneath you, giving you a different perspective of this beautiful landscape.It is a personal favourite for those of us in the Tourice Travels office.
             </p>
-            <button class="b-button">Book A Tour</button>
+            <button class="b-button"><a href="flying.html">Book A Tour</a></button>
+            
     </div>
 </section>
-<section>
-    <div><h2>CLIENT TESTIMONIALS</h2>
-    <style>
-        h2{
-            text-align: center;
-        }
-    </style></div>
-    <div class="testimonial-container">
-        <div class="testimonial">
-             <img src="client1.jpg" alt="client1" class="profile-picture">
-             <p class="content">From the moment i found Tourice Travels right through to the moment Doreen dropped us off at the airport for our onward flight to Mombasa, the whole safari experience totally lived up to our expectations and beyond. Before we flew to Kenya, i bombarded Doreen with questions constantly about the safari and she replied almost immediately and answered my questions and put my mind to rest.</p> 
-              <p class="author">ADAM DAVIS</p>
-        </div>
-        <div class="testimonial">
-              <img src="client2.jpg" alt="client2" class="profile-picture">
-                <p class="content">This vacation was a dream come true for me...and Tourice Travels did a great job of making it happen!They responded very quickly and completely to our requests for information.</p>
-             <p class="author">SUSAN JANE</p>
-        </div>
-        <div class="testimonial">
-              <img src="client3.jpg" alt="client3" class="profile-picture">
-                <p class="content">Our holiday in Kenya was well organised, it was so easy to deal with Doreen and her crew. The safari was incredible in that we saw the big 5 and so many African wildlife. Accomodation was brilliant and so much more than what we expected. Food was good especially the soups, so yummy! I just loved the whole experience and would like to say a really big thank you to Tourice Travels.Asanteni sana.It was an experience of a lifetime. </p>
-            <p class="author">CARL JOHNSOHN</p>
-        </div>
-        <div class="testimonial">
-            <img src="client4.jpg" alt="client4" class="profile-picture">
-            <p class="content">Tourice Travels:<br>Exceeding expectations: In the two years we  lived in Kenya, we used Tourice Travels to arrange several trips for us and for our friends and family. Without exception they did a great job!</p>    
-            <p class="author">JAMES PETER</p>
-        </div>
-        <div class="testimonial">
-             <img src="client5.jpg" alt="client5" class="profile-picture">
-             <p class="content">We've lived in Kenya for over 4 years and have used several other safari companies during that time. But, the care and support we got from Tourice Travels was second to none.</p>
-            <p class="author">JOY JANICE</p>
-        </div>
-    </div>
-</section>
-<section>
+
+<section class="my-section">
     <div><h2>TOURICE TRAVELS</h2>
     <style>
         h2{
@@ -219,52 +201,23 @@
         }
     </style>
     </div>
+    
     <img src="Tourice team.gif" alt="tourice">
+    
+
+    
 </section>
 <footer>
-    <div class="footer-container">
-        <div class="footer-content">
-            <p>Copy right &copy; 2020 Tourice Travels.All rights reserved.</p>
-            <p>Contact us: info@Touricetravels.com</p>
-            <div class="social-media-links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
+    <p>Copy right &copy; 2020 Tourice Travels.All rights reserved.</p>
+            </footer>
 <style>
+
     footer{
-        background-color:saddlebrown;
-        padding:20px 0;
+        background-color: ghostwhite;
+        padding:5px 0;
         font-size: 14px;
-        color:ghostwhite;
-    }
-    .footer-container{
-        max-width:1200px;
-        margin:0 auto;
-        text-align: center;
-    }
-    .footer-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .social-media-links a{
-        display: inline-block;
-        margin:0 10px;
-        color:ghostwhite;
-        font-size: 20px;
-    }
-    .social-media-links a:hover{
-        color:ghostwhite
+        color:black;
     }
 </style>
-        <div class="footer">
-
-        </div>
-    </div>
 </body>
 </html>
